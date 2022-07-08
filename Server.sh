@@ -31,9 +31,15 @@ sudo apt install systemd-timesyncd
 ## Install flatpak
 sudo apt install flatpak
 ## Add Flatpak repository
-udo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-## Install Steam
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+## Install Chrome (Flatpak)
+sudo flatpak install flathub com.google.Chrome
+## Install VS Code (Flatpak)
+sudo flatpak install flathub com.visualstudio.code
+## Install Steam (Flatpak)
 sudo flatpak install flathub com.valvesoftware.Steam
+## If missing libc.so.3 32bit library
+sudo apt install libc6-i386
 
 ## Install Nvidia drivers
 deb http://deb.debian.org/debian/ bullseye main contrib non-free
