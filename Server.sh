@@ -60,7 +60,3 @@ sudo apt update
 sudo apt install nvidia-docker2
 sudo systemctl restart docker
 sudo docker run --rm --gpus all nvidia/cuda:11.0.3-base-ubuntu20.04 nvidia-smi
-
-## Install Chrome, VSCode and Steam
-sudo apt install ./google-chrome-stable_current_amd64.deb
-sudo apt install ./code_1.68.1-1655263094_amd64.deb
