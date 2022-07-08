@@ -50,7 +50,10 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install cuda nvidia-driver nvidia-settings nvidia-smi nvidia-xconfig nvidia-opencl-icd nvidia-opencl-common nvidia-detect linux-image-amd64 linux-headers-amd64 cuda
 sudo reboot
 nvidia-smi
+
+## Install nvidia patch for unlimited number of streams
 git clone https://github.com/keylase/nvidia-patch.git
+cd nvidia-patch
 sudo bash ./patch.sh
 sudo bash ./patch-fbc.sh
 
