@@ -28,6 +28,12 @@ sudo usermod -aG docker tomo
 sudo apt install gnome-tweak-tool
 ## Install systemd-timesyncd
 sudo apt install systemd-timesyncd
+## Install flatpak
+sudo apt install flatpak
+## Add Flatpak repository
+udo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+## Install Steam
+sudo flatpak install flathub com.valvesoftware.Steam
 
 ## Install Nvidia drivers
 deb http://deb.debian.org/debian/ bullseye main contrib non-free
@@ -52,4 +58,3 @@ sudo docker run --rm --gpus all nvidia/cuda:11.0.3-base-ubuntu20.04 nvidia-smi
 ## Install Chrome, VSCode and Steam
 sudo apt install ./google-chrome-stable_current_amd64.deb
 sudo apt install ./code_1.68.1-1655263094_amd64.deb
-sudo apt install ./steam_latest.deb
