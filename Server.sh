@@ -6,11 +6,11 @@ sudo mkdir /storage
 sudo chown -R tomo:tomo /backup
 sudo chown -R tomo:tomo /docker
 sudo chown -R tomo:tomo /downloads
+sudo chown -R tomo:tomo /storage
 sudo chmod -R 777 /backup
 sudo chmod -R 777 /docker
 sudo chmod -R 777 /downloads
 sudo chmod -R 777 /storage
-sudo chown -R tomo:tomo /storage
 
 ## Add Ramdisk to fstab
 sudo mkdir /tmp/ramdisk
