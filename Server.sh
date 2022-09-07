@@ -38,10 +38,12 @@ sudo flatpak install flathub com.google.Chrome
 sudo flatpak install flathub com.visualstudio.code
 ## Install Steam (Flatpak)
 sudo flatpak install flathub com.valvesoftware.Steam
+## Add access to Steam (Flatpak) to /games directory
+sudo flatpak override --system --filesystem=/games com.valvesoftware.Steam
 ## Install Plex Desktop (Flatpak)
 sudo flatpak install flathub tv.plex.PlexDesktop
 ## Install Viber (Flatpak)
-flatpak install flathub com.viber.Viber
+sudo flatpak install flathub com.viber.Viber
 
 ## Install Nvidia drivers
 deb http://deb.debian.org/debian/ bullseye main contrib non-free
