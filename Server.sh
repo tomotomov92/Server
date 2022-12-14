@@ -22,13 +22,17 @@ sudo apt update
 sudo apt upgrade
 sudo apt install openssh-server
 ## Install Docker and Docker-Compose
-sudo apt install openssh-server docker docker-compose
+sudo apt install docker docker-compose
 sudo usermod -aG docker tomo
 ## Install Gnome Tweaks
 sudo apt install gnome-tweak-tool
 ## Install systemd-timesyncd
 sudo apt install systemd-timesyncd
 ## Install flatpak
+sudo apt install flatpak
+## Instaall latest version on older versions of Linux
+sudo add-apt-repository ppa:flatpak/stable
+sudo apt update
 sudo apt install flatpak
 ## Add Flatpak repository
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
