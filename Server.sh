@@ -4,13 +4,17 @@ sudo mkdir /docker
 sudo mkdir /downloads
 sudo mkdir /storage
 sudo chown -R tomo:tomo /backup
-sudo chown -R tomo:tomo /docker
-sudo chown -R tomo:tomo /downloads
+sudo chown -R tomo:tomo /system/docker
+sudo chown -R tomo:tomo /system/downloads
 sudo chown -R tomo:tomo /storage
 sudo chmod -R 777 /backup
-sudo chmod -R 777 /docker
-sudo chmod -R 777 /downloads
+sudo chmod -R 777 /system/docker
+sudo chmod -R 777 /system/downloads
 sudo chmod -R 777 /storage
+
+## Link created directories to root paths
+sudo ln -s /system/docker /
+sudo ln -s /system/downloads /
 
 ## Add Ramdisk to fstab
 sudo mkdir /tmp/ramdisk
