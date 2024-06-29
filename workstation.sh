@@ -1,3 +1,10 @@
+## Add user to sudoers:
+su
+## as root
+sudo visudo
+# Add [username] ALL=(ALL:ALL) ALL
+
+
 ## Create the necessary directories and permissions
 sudo mkdir /backup
 sudo mkdir /storage
