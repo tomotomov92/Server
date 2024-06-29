@@ -37,17 +37,3 @@ sudo apt install openssh-server
 
 ## Install systemd-timesyncd
 sudo apt install systemd-timesyncd
-
-## Install flatpak
-sudo apt install flatpak
-sudo apt update
-## Add Flatpak repository
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-## Install Chrome (Flatpak)
-sudo flatpak install flathub com.google.Chrome
-## Install VS Code (Flatpak)
-sudo flatpak install flathub com.visualstudio.code
-## Install Plex Desktop (Flatpak)
-sudo flatpak install flathub tv.plex.PlexDesktop
-## Install Viber (Flatpak)
-sudo flatpak install flathub com.viber.Viber
