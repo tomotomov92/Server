@@ -24,7 +24,7 @@ sudo ln -s /system/downloads /
 ## Add Ramdisk to fstab
 sudo mkdir /tmp/ramdisk
 sudo chmod 777 /tmp/ramdisk
-ramdisk  /tmp/ramdisk  tmpfs  defaults,size=10G,x-gvfs-show  0  0
+echo 'ramdisk  /tmp/ramdisk  tmpfs  defaults,size=10G,x-gvfs-show  0  0' | sudo tee -a /etc/fstab
 
 ## Update apt
 sudo apt update && sudo apt upgrade -y
