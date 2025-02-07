@@ -9,13 +9,13 @@ sudo visudo
 sudo mkdir /backup
 sudo mkdir /storage
 sudo chown -R tomo:tomo /backup
+sudo chown -R tomo:tomo /storage
 sudo chown -R tomo:tomo /system/docker
 sudo chown -R tomo:tomo /system/downloads
-sudo chown -R tomo:tomo /storage
 sudo chmod -R 700 /backup
+sudo chmod -R 700 /storage
 sudo chmod -R 700 /system/docker
 sudo chmod -R 700 /system/downloads
-sudo chmod -R 700 /storage
 
 ## Link created directories to root paths
 sudo ln -s /system/docker /
