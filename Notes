@@ -1,0 +1,45 @@
+cd /storage && rsync -av --del . /media/tomo/c6216645-baa5-42aa-8b0f-3703c4fd7f43
+cd /storage/Data && sudo rsync -ruv --del . "/media/tomo/T7 Touch/Data"
+cd /storage/Data/Distros && rsync -av --del . /media/tomo/Ventoy
+cd /system/'TV Recordings' && rsync -av --del . /storage/'TV Recordings'
+
+badblocks:
+watch -n 120 "sudo ./bht --status"
+Progress:
+sudo iotop -ao
+Temperature:
+watch -n 120 "ls -1 /dev/sd? | xargs -n1 sudo smartctl -A | grep Celsius"
+
+
+
+
+
+pikvm-update
+
+
+rw
+
+
+pacman -S tailscale-pikvm
+systemctl enable --now tailscaled
+sudo tailscale up
+
+
+nano /etc/kvmd/override.yaml
+
+kvmd:
+     info:
+         fan:
+             unix: ''
+     hid:
+         jiggler:
+             enabled: true
+             active: true
+     wol:
+         mac: ??:??:??:??:??:??
+
+# Enable Oled display
+
+rw
+systemctl enable --now kvmd-oled
+ro
