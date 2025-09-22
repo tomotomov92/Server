@@ -50,11 +50,24 @@ sudo apt install flatpak
 sudo apt update
 ## Add Flatpak repository
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-## Install Chrome (Flatpak)
-sudo flatpak install flathub com.google.Chrome
-## Install VS Code (Flatpak)
-sudo flatpak install flathub com.visualstudio.code
+
+## Install Avidemux (Flatpak)
+flatpak install flathub org.avidemux.Avidemux
+## Install Calibre (Flatpak)
+flatpak install flathub com.calibre_ebook.calibre
+## Install Flatseal (Flatpak)
+flatpak install flathub com.github.tchx84.Flatseal
+## Install MKVToolNix (Flatpak)
+flatpak install flathub org.bunkus.mkvtoolnix-gui
+## Install OBS Studio (Flatpak)
+flatpak install flathub com.obsproject.Studio
+## Install openterfaceQT (Flatpak)
+flatpak install flathub com.openterface.openterfaceQT
+## Install Raspberry Pi Imager (Flatpak)
+flatpak install flathub org.raspberrypi.rpi-imager
 ## Install Plex Desktop (Flatpak)
-sudo flatpak install flathub tv.plex.PlexDesktop
+ flatpak install flathub tv.plex.PlexDesktop
 ## Install Viber (Flatpak)
-sudo flatpak install flathub com.viber.Viber
+flatpak install flathub com.viber.Viber
+## Install VLC (Flatpak)
+flatpak install flathub org.videolan.VLC
