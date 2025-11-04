@@ -1,7 +1,7 @@
-cd /storage && rsync -av --del . /media/tomo/c6216645-baa5-42aa-8b0f-3703c4fd7f43
-cd /storage/Data && sudo rsync -ruv --del . "/media/tomo/T7 Touch/Data"
-cd /storage/Data/Distros && rsync -av --del . /media/tomo/Ventoy
-cd /system/'TV Recordings' && rsync -av --del . /storage/'TV Recordings'
+rsync -av --del /storage/ /media/tomo/c6216645-baa5-42aa-8b0f-3703c4fd7f43
+sudo rsync -ruv --del /storage/Data/ "/media/tomo/T7 Touch"/Data
+sudo rsync -av --del /storage/Data/Distros/ /media/tomo/Ventoy
+rsync -av --del /system/'TV Recordings'/ /storage/'TV Recordings'
 
 badblocks:
 watch -n 120 "sudo ./bht --status"
